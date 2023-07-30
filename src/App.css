@@ -1,0 +1,95 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.App{
+    width:100%;
+    min-height:100vh;
+}
+.nav-bar{
+    background-color: rgb(17, 8, 54);
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+    width:100%;
+    height:3.75rem;
+}
+.nav-bar strong{
+    font-size: 1.9rem;
+}
+.nav-bar i{
+    margin-right: 10px;
+}
+.content-div{
+    background-color: rgb(214, 30, 30);
+    display: flex;
+    padding: 10px 20px;
+    height: calc(100vh - 3.75rem);
+    box-sizing: border-box;
+    justify-content: center;
+}
+.calculator{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 68%;
+}
+.user-display{
+    background-color: rgba(255, 255, 255, 0.478);
+    width:74%;
+    border: 3px solid white;
+    overflow-x: hidden;
+}
+.input{
+    font-size: 4rem;
+    text-align: right;
+    padding:0px 10px 20px 10px;
+    margin:0;
+}
+.op-str{
+    font-size: 1.6rem;
+    text-align: right;
+    height:1.6rem;
+    margin:0;
+    padding: 10px 10px 5px 10px;
+}
+.buttons{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.buttons button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    width:18%;
+    height: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 10px;
+    margin:0.25%;
+    border:none;
+}
+.buttons button:hover{
+    background-color: rgba(0, 0, 0, 0.354);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:900px) {
+    
+    .calculator{
+        width: 100%;
+    }
+    .user-display{
+        width: 95%;;
+    }
+    .buttons button{
+        width:23%;
+        height: 4rem;
+    }
+    .history-block{
+        display:none;
+        width:0%;
+    }
+}
